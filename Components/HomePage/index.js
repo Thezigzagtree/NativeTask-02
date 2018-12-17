@@ -3,7 +3,7 @@ import { View } from "react-native";
 
 // NativeBase Components
 import { Container, Header } from "native-base";
-
+import MyStack from "../Navigation";
 // Style
 import styles from "./styles";
 
@@ -18,8 +18,7 @@ class HomePage extends Component {
     return (
       <Container style={styles.transparent}>
         <View style={styles.overlay} />
-        <Header style={styles.transparent} />
-        <CoffeeCart />
+        <MyStack />
       </Container>
     );
   }

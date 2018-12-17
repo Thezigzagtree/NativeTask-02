@@ -9,7 +9,9 @@ import styles from "./styles";
 
 class CoffeeItem extends Component {
   handlePress() {
-    alert("Pressed");
+    this.props.navigation.navigate("CoffeeDetailScreen", {
+      shop: this.props.coffeeShop
+    });
   }
   render() {
     const { coffeeShop } = this.props;
